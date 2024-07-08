@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <script src="index.js"></script>
+
+    <div id="barDiv">
+      <a href="." id="pageLink">
+        <div id="hunterOuterDiv">
+          <div id="hunter">
+            <img src="hunterLogo.svg" id="hunterLogo" />
+            <div id="hunterSpan">Hunter</div>
+          </div>
+        </div>
+      </a>
+
+      <div id="middleOfBar">
+        <div id="roundedOuterDiv">
+          <div id="roundedInnerDiv"></div>
+        </div>
+        <div>
+          <a href="#getInTouch" id="availableSpan">
+            <span>Available for new projects </span></a
+          >
+        </div>
+      </div>
+      <div id="biggestMenuDiv" >
+        <div id="menuDiv" onclick="displayMenu()">
+          <div id="menuSpan"><span> MENU </span></div>
+
+          <div id="nav-icon2">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+          $(document).ready(function () {
+            function toggleHamburger() {
+              $("#nav-icon2").toggleClass("open");
+            }
+
+            $("#menuDiv").click(function () {
+              toggleHamburger();
+            });
+
+           
+          });
+        </script>
+
+        <div id="menu-content">
+          <a href="#secondTitle">Portfolio</a>
+          <a href="#AboutMe">About me</a>
+          <a href="#logoIpsmDiv">Clients</a>
+          <a href="#getInTouch">Get in touch</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="firstContainer">
+      <div id="firstTitle" class="slideUp">
+        <h1>Hi! I'm Hunter, Freelance photographer</h1>
+        <span id="span1"
+          >Based in Amsterdam, I specialize in conceptual photography and love
+          to take photos with creativity and passion.</span
+        >
+        <a
+          href="#myWork"
+          id="exploreMyWork"
+          onmouseover="ChangeIcon(this)"
+          onmouseout="ResetIcon(this)"
+        >
+          EXPLORE MY WORK &nbsp; <span id="greaterThan"> > </span></a
+        >
+      </div>
+
+      <div><img src="guy.png" id="guyImage" /></div>
+    </div>
+
+    <div id="myWork">
+      <div id="secondTitle">
+        <p>My Work</p>
+        <span id="span2">
+          Helping businesses through photography is what makes my job
+          meaningful. Explore some of my recent work down below.</span
+        >
+      </div>
+
+      <div id="hello" class="MWF" style="visibility: hidden">
+        <!-- MWF stands for MyWork Fields -->
+        <div class="MWFBar">
+          <div class="MWFTitle">
+            <span class="MWFTitleNumber">01/</span>
+            <span class="MWFTitleText"> Interior photography </span>
+          </div>
+
+          <div class="MWFCategories">
+            <div class="categories">Real estate</div>
+            <div class="categories">Interior design</div>
+          </div>
+        </div>
+
+        <div class="MWFImages">
+          <div class="Container">
+            <div class="IMGDIV"><img src="Interior 1.jpg" /></div>
+            <div class="yellowLayer">
+              <div class="ContentVIEW"><span> VIEW </span></div>
+            </div>
+          </div>
+          <div class="Container">
+            <div class="IMGDIV"><img src="Interior 2.jpg" /></div>
+            <div class="yellowLayer">
+              <div class="ContentVIEW"><span> VIEW </span></div>
+            </div>
+          </div>
+          <div class="Container">
+            <div class="IMGDIV"><img src="Interior 3.jpg" /></div>
+            <div class="yellowLayer">
+              <div class="ContentVIEW"><span> VIEW </span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="invisibleImages" id="invImg1">
+          <div class="Container">
+            <div class="IMGDIV"><img src="Interior 4.jpg" /></div>
+            <div class="yellowLayer">
+              <div class="ContentVIEW"><span> VIEW </span></div>
+            </div>
+          </div>
+          <div class="Container">
+            <div class="IMGDIV"><img src="Interior 5.jpg" /></div>
+            <div class="yellowLayer">
+              <div class="ContentVIEW"><span> VIEW </span></div>
+            </div>
+          </div>
+          <div class="Container">
+            <div class="IMGDIV"><img src="Interior 6.jpg" /></div>
+            <div class="yellowLayer">
+              <div class="ContentVIEW"><span> VIEW </span></div>
+            </div>
+          </div>
+          <div class="Container">
+            <div class="IMGDIV"><img src="Interior 7.jpg" /></div>
+            <div class="yellowLayer">
+              <div class="ContentVIEW"><span> VIEW </span></div>
+            </div>
+          </div>
+          <div class="Container">
+            <div class="IMGDIV"><img src="Interior 8.jpg" /></div>
+            <div class="yellowLayer">
+              <div class="ContentVIEW"><span> VIEW </span></div>
+            </div>
+          </div>
+          <div class="Container">
+            <div class="IMGDIV"><img src="Interior 9.jpg" /></div>
+            <div class="yellowLayer">
+              <div class="ContentVIEW"><span> VIEW </span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="viewFullGallery" id="VFG1" onclick="ChangeThisIcon(this)">
+          <div>VIEW FULL GALLERY &nbsp;</div>
+          <div><img src="toDown.svg" id="arrow1" class="arrowIcon" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="AboutMe">
+      <div id="AboutMeImages">
+        <div><img src="About Image 1.jpg" id="AboutImage1" /></div>
+        <div>
+          <img src="About Image 2.jpg" id="AboutImage2" class="rightToLeft" />
+        </div>
+      </div>
+
+      <div id="thirdTitle" style="visibility: hidden">
+        <h2>Why I fell in love with photography</h2>
+        <span id="span3"
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+          Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc
+          ut sem vitae risus tristique posuere.<br /><br />
+
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+          Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc
+          ut sem vitae risus tristique posuere.</span
+        >
+
+        <a
+          href="#getInTouch"
+          id="workWithMe"
+          onmouseover="ChangeIcon(this)"
+          onmouseout="ResetIcon(this)"
+        >
+          WORK WITH ME &nbsp; <span id="greaterThan1"> > </span></a
+        >
+      </div>
+    </div>
+    <div id="logoIpsmDiv">
+      <div id="logoIpsum1" style="visibility: hidden">
+        <div><img src="Logo Ipsum 1.svg" /></div>
+        <div><img src="Logo Ipsum 2.svg" /></div>
+        <div><img src="Logo Ipsum 3.svg" /></div>
+        <div><img src="Logo Ipsum 4.svg" /></div>
+      </div>
+
+      <div id="logoIpsum2" style="visibility: hidden">
+        <div><img src="Logo Ipsum 2.svg" /></div>
+        <div><img src="Logo Ipsum 3.svg" /></div>
+        <div><img src="Logo Ipsum 4.svg" /></div>
+        <div><img src="Logo Ipsum 1.svg" /></div>
+      </div>
+
+      <div id="logoIpsum3" style="visibility: hidden">
+        <div><img src="Logo Ipsum 4.svg" /></div>
+        <div><img src="Logo Ipsum 1.svg" /></div>
+        <div><img src="Logo Ipsum 2.svg" /></div>
+        <div><img src="Logo Ipsum 3.svg" /></div>
+      </div>
+    </div>
+
+    <div id="comments">
+      <div id="commentsOuterDiv">
+        <div id="quotesImgDiv"><img src="Quotes.svg" id="QuotesImg" /></div>
+
+        <div class="slides">
+          <div>
+            Hunter is a very professional and creative photographer. Hunter has
+            plenty of ideas to make the pictures clear and interesting. We look
+            forward to working with him again soon.
+          </div>
+          <div class="commentInfo">
+            <div class="commentIMGDiv">
+              <img src="Sofia fraser.jpg" class="commentIMG" />
+            </div>
+            <div class="commentIMGInfo">
+              <div class="commentName">Sophia Fraser</div>
+              <div class="commentMajor">R&T HOUSING</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slides">
+          <div>
+            We were looking for a photographer that could deliver corporate yet
+            personal photos of our company and we’re happy to say that Hunter
+            exceeded our expectations.
+          </div>
+          <div class="commentInfo">
+            <div class="commentIMGDiv">
+              <img src="ALESSANDRO.jpg" class="commentIMG" />
+            </div>
+            <div class="commentIMGInfo">
+              <div class="commentName">Alessandro Rutledge</div>
+              <div class="commentMajor">CLEARSKY</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slides">
+          <div>
+            I can't thank Hunter enough. As an interior designer it is a blast
+            to work with Hunter. He masters capturing the ''feeling'' of a room
+            and guides you through his process step by step.
+          </div>
+          <div class="commentInfo">
+            <div class="commentIMGDiv">
+              <img src="MAX DUNCAN.jpg" class="commentIMG" />
+            </div>
+            <div class="commentIMGInfo">
+              <div class="commentName">Max Duncan</div>
+              <div class="commentMajor">MD INTERIOR DESIGN</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="commentsButtonsDiv">
+        <div class="commentButton" onclick="plusDivs(-1)">&lt;</div>
+        <div class="commentButton" onclick="plusDivs(1)">></div>
+
+        <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+
+          function plusDivs(n) {
+            showDivs((slideIndex += n));
+          }
+
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("slides");
+            if (n > x.length) {
+              slideIndex = 1;
+            }
+            if (n < 1) {
+              slideIndex = x.length;
+            }
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "flex";
+          }
+        </script>
+      </div>
+    </div>
+
+    <div id="getInTouch">
+      <div id="leftDiv">
+        <div><img src="guy.png" class="slideUp" id="roundedGuyImg" /></div>
+        <div id="lastTitle" class="slideUp">
+          <h1>Feel inspired?</h1>
+          <span id="span4"
+            >Lets connect! I'd love hear about your story and how I might be
+            able to help through photography.</span
+          >
+          <a
+            href="#"
+            id="emailMe"
+            onmouseover="ChangeIcon(this)"
+            onmouseout="ResetIcon(this)"
+          >
+            EMAIL ME &nbsp; <span id="greaterThan2"> > </span></a
+          >
+        </div>
+      </div>
+
+      <div id="formDiv">
+        <div>
+          <div class="innerDiv">
+            <div>FIRST NAME</div>
+            <div><input type="text" name="fname" /></div>
+          </div>
+
+          <div class="innerDiv">
+            <div>COMPANY</div>
+            <div><input type="text" name="company" /></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="innerDiv">
+            <div>MAIL</div>
+            <div><input type="email" name="mail" /></div>
+          </div>
+
+          <div class="innerDiv">
+            <div>PHONE</div>
+            <div><input type="number" name="phone" /></div>
+          </div>
+        </div>
+
+        <div id="checkboxDiv">
+          <div class="innerDiv">
+            <div>I WOULD LIKE TO:</div>
+            <div>
+              <div>
+                <input type="checkbox" id="project" name="project" />
+                <label for="project"> Hire you for a project</label><br />
+              </div>
+              <div>
+                <input type="checkbox" id="question" name="question" />
+                <label for="question"> Ask a question</label><br />
+              </div>
+              <div>
+                <input type="checkbox" id="partnership" name="partnership" />
+                <label for="partnership"> Talk partnership</label><br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="messageDiv">
+          <div class="innerDiv">
+            <div>MESSAGE</div>
+
+            <textarea> </textarea>
+          </div>
+        </div>
+
+        <div>
+          <div class="innerDiv" id="submitFormDiv">
+            <input type="button" value="Submit" id="submitForm" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="signature">
+      <div id="signatureLogos">
+        <div><img src="linkedinlogo.svg" /></div>
+        <div><img src="Instagram.svg" /></div>
+      </div>
+
+      <div>Powered by jad mcheik</div>
+    </div>
+  </body>
+</html>
